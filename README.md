@@ -1,2 +1,2 @@
 # Things_To_Do
-This is simple to do/Note android app
+This is simple to-do/Note android app
