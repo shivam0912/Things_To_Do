@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_register"
+        android:layout_width="329dp"
+        android:layout_height="221dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/log_card"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_register2"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.430"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/username_reg"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_rectangle"
+            android:ems="10"
+            android:hint="Username"
+            android:paddingLeft="20dp"
+            android:textColor="@color/myWhite"
+            android:textColorHint="@color/myWhite"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email_reg"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_rectangle"
+            android:ems="10"
+            android:hint="Email "
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColor="@color/myWhite"
+            android:textColorHint="@color/myWhite"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/password_reg"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_rectangle"
+            android:ems="10"
+            android:hint="Password "
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/myWhite"
+            android:textColorHint="@color/myWhite"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_register2"
+        android:layout_width="329dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/log_card"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.430"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_rectangle"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/myWhite"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
